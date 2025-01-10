@@ -9,7 +9,7 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
         <div className='mx-auto px-4 md:px-8 shadow-lg'>
             <header className="mb-4 flex items-center justify-between py-4 md:py-8">
                 {/* <!-- logo - start --> */}
-                <a href="/" className="inline-flex items-center" aria-label="logo">
+                <a href="/" className="inline-flex items-center" aria-label="logo">Logo
                     {/* <Image
                         src={Logo}
                         alt='logo'
