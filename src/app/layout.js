@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

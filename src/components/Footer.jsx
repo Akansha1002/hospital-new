@@ -194,7 +194,7 @@ export default function Footer() {
 
                     </div>
                 </div>
-                        <div className="py-8 text-center text-sm text-gray-400 bg-white">© 2024 - shrishyamimpex. All rights reserved.</div>
+                        <div className="py-3 text-center text-sm text-gray-400 bg-white">© 2024 - shrishyamimpex. All rights reserved.</div>
             </footer>
             {/* <!-- footer - end --> */}
         </div>

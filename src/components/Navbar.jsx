@@ -4,11 +4,12 @@ import React from 'react'
 import Logo from '../../public/logo.jpeg'
 
 export default function Navbar({ navbarOpen, setNavbarOpen }) {
+
     return (
-        <div className='mx-auto px-4 md:px-8 shadow-xl'>
+        <div className='mx-auto px-4 md:px-8 shadow-lg'>
             <header className="mb-4 flex items-center justify-between py-4 md:py-8">
                 {/* <!-- logo - start --> */}
-                <a href="/" className="inline-flex items-center" aria-label="logo">
+                <a href="/" className="inline-flex items-center" aria-label="logo">Logo
                     {/* <Image
                         src={Logo}
                         alt='logo'
@@ -20,34 +21,39 @@ export default function Navbar({ navbarOpen, setNavbarOpen }) {
 
                 {/* <!-- nav - start --> */}
                 <nav className="hidden gap-12 lg:flex sticky">
-                    <a href="/" className="text-lg font-semibold text-indigo-500">Home</a>
+                    <Link
+                        href="/"
+                        // className="text-lg font-semibold text-indigo-500">
+                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500">
+                        Home
+                    </Link>
                     <Link
                         href="/about-us"
-                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
                     >
                         About
                     </Link>
                     <Link
                         href="/product"
-                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
                     >
                         Product
                     </Link>
                     <Link
                         href="/gallery"
-                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
                     >
                         Gallery
                     </Link>
                     {/* <Link
                         href="/exports"
-                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
                     >
                         Exports
                     </Link> */}
                     <Link
                         href="/contact-us"
-                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+                        className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
                     >
                         Contact Us
                     </Link>
